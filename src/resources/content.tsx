@@ -4,7 +4,7 @@ import { Line, Logo, Row, Text } from "@once-ui-system/core";
 const person: Person = {
   firstName: "Manideep",
   lastName: "Yadav Mamilla",
-  name: `Manideep Mamilla`,
+  name: `Mamilla Manideep`,
   role: "Front-end Developer",
   avatar: "/images/avatar.jpg",
   email: "manideep.m.yadav@gmail.com",
@@ -81,7 +81,7 @@ const home: Home = {
 const about: About = {
   path: "/about",
   label: "About",
-  title: `About – ${person.name}`,
+  title: `${person.name} - Portfolio`,
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
     display: true,
