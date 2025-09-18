@@ -27,7 +27,7 @@ export async function generateMetadata() {
   });
 }
 
-export default function page() {
+export default function Page() {
   const structure = [
     {
       title: about.intro.title,
