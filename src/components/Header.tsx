@@ -73,7 +73,7 @@ export const Header = () => {
         }}
       >
         <Row paddingLeft="12" fillWidth vertical="center" textVariant="body-default-s">
-          {display.location && <Row s={{ hide: true }}>{person.location}</Row>}
+          {display.location && <Row s={{ hide: true }}>{person.local}</Row>}
         </Row>
         <Row fillWidth horizontal="center">
           <Row
@@ -90,26 +90,7 @@ export const Header = () => {
                 <ToggleButton prefixIcon="home" href="/" selected={pathname === "/"} />
               )}
               <Line background="neutral-alpha-medium" vert maxHeight="24" />
-              {routes["/about"] && (
-                <>
-                  <Row s={{ hide: true }}>
-                    <ToggleButton
-                      prefixIcon="person"
-                      href="/about"
-                      label={about.label}
-                      selected={pathname === "/about"}
-                    />
-                  </Row>
-                  <Row hide s={{ hide: false }}>
-                    <ToggleButton
-                      prefixIcon="person"
-                      href="/about"
-                      selected={pathname === "/about"}
-                    />
-                  </Row>
-                </>
-              )}
-              {routes["/work"] && (
+              {/* {routes["/work"] && (
                 <>
                   <Row s={{ hide: true }}>
                     <ToggleButton
@@ -165,10 +146,10 @@ export const Header = () => {
                     />
                   </Row>
                 </>
-              )}
+              )} */}
               {display.themeSwitcher && (
                 <>
-                  <Line background="neutral-alpha-medium" vert maxHeight="24" />
+                  {/* <Line background="neutral-alpha-medium" vert maxHeight="24" /> */}
                   <ThemeToggle />
                 </>
               )}

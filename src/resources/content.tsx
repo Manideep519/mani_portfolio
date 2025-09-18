@@ -2,14 +2,15 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Logo, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
+  firstName: "Manideep",
+  lastName: "Yadav Mamilla",
+  name: `Manideep Mamilla`,
+  role: "Front-end Developer",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "manideep.m.yadav@gmail.com",
+  location: "Asia/Kolkata",
+  languages: ["English", "Hindi", "Telugu"],
+  local: "Hyderbad/India",
 };
 
 const newsletter: Newsletter = {
@@ -24,22 +25,22 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/Manideep519/", // [cite: 4]
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/manideep-yadav/",
   },
   {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    name: "WhatsApp",
+    icon: "whatsapp", // You may need to add a "whatsapp" icon
+    link: "https://wa.me/917674062837", // [cite: 3]
   },
   {
     name: "Email",
     icon: "email",
-    link: `mailto:${person.email}`,
+    link: `mailto:${person.email}`, // [cite: 2]
   },
 ];
 
@@ -90,7 +91,7 @@ const about: About = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
@@ -98,9 +99,11 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        A React Frontend Developer from Hyderabad with over 5 years of experience building scalable
+        web and mobile applications using the modern React ecosystem, React Native, and TypeScript.
+        Passionate about creating intuitive, user-centric digital experiences through clean code and
+        performance optimization. Specialized in developing responsive, accessible user interfaces
+        with React.
       </>
     ),
   },
@@ -109,41 +112,82 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Citimedia",
+        timeframe: "Jan 2024 - Present",
+        role: "Frontend Developer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Developed modern React applications including interactive dashboards and map-based
+            solutions using React 18, TypeScript, and Tailwind CSS with Electron for desktop
+            deployment.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Architected and deployed scalable frontend solutions on AWS and GCP instances, working
+            independently to deliver end-to-end user experiences.
+          </>,
+          <>
+            Implemented responsive designs and performance optimizations, ensuring seamless user
+            interactions across web and desktop platforms.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Asgardian Labs",
+        timeframe: "Jan 2023 - Dec 2023",
+        role: "ReactJS Developer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Built dynamic web applications using React, Next.js, and Material-UI, focusing on
+            responsive design and cross-browser compatibility.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Developed full-stack solutions with Node.js backend and MongoDB integration, ensuring
+            efficient data management and retrieval.
+          </>,
+          <>
+            Delivered high-quality, maintainable code following modern JavaScript (ES6+) best
+            practices and web development standards.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Deque Systems",
+        timeframe: "Jun 2022 - Dec 2022",
+        role: "Frontend Engineer",
+        achievements: [
+          <>
+            Successfully migrated legacy UI from Pug templates to modern ReactJS, improving
+            maintainability and development efficiency.
+          </>,
+          <>
+            Implemented accessibility standards (WCAG, ARIA) across web applications, ensuring
+            inclusive user experiences.
+          </>,
+          <>
+            Developed backend solutions with Node.js and PostgreSQL, delivering integrated
+            full-stack functionality.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "AgriEtern Technologies Pvt Ltd",
+        timeframe: "Jun 2019 - May 2022",
+        role: "Web Developer",
+        achievements: [
+          <>
+            Developed responsive web applications using HTML5, CSS3, JavaScript, and jQuery with the
+            Bootstrap framework.
+          </>,
+          <>
+            Built dynamic web solutions using PHP and MySQL database integration, implementing
+            server-side scripting for data processing and user authentication systems.
+          </>,
+          <>
+            Collaborated with backend teams to integrate RESTful APIs and implemented responsive
+            design patterns using Bootstrap's grid system.
           </>,
         ],
         images: [],
@@ -151,7 +195,7 @@ const about: About = {
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
+    display: false,
     title: "Studies",
     institutions: [
       {
@@ -165,65 +209,97 @@ const about: About = {
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
+    display: true,
+    title: "Technical Skills",
     skills: [
       {
-        title: "Figma",
+        title: "Frontend Development",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>
+            Building scalable, high-performance web and mobile applications using the modern React
+            ecosystem, React Native, and TypeScript.
+          </>
         ),
         tags: [
-          {
-            name: "Figma",
-            icon: "figma",
-          },
+          { name: "React", icon: "react" },
+          { name: "React Native", icon: "react" },
+          { name: "TypeScript", icon: "typescript" },
+          { name: "Next.js", icon: "nextjs" },
+          { name: "Vite", icon: "vite" },
+          { name: "Electron", icon: "electron" },
+          { name: " JavaScript", icon: "javaScript" },
+          { name: " HTML5", icon: "HTML5" },
+          { name: "CSS3", icon: "CSS3" },
         ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        title: "Next.js",
+        title: "UI Libraries & Styling",
         description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <>
+            Crafting responsive and accessible user interfaces with modern design systems and
+            CSS-in-JS solutions.
+          </>
         ),
         tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "Supabase",
-            icon: "supabase",
-          },
+          { name: "Tailwind CSS", icon: "tailwindcss" },
+          { name: "Material-UI", icon: "materialui" },
+          { name: "Shadcn/ui", icon: "" },
+          { name: "Styled Components", icon: "styledcomponents" },
         ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+        images: [],
+      },
+      {
+        title: "Backend & Databases",
+        description: (
+          <>
+            Developing robust server-side applications and APIs with Node.js and managing data with
+            both SQL and NoSQL databases.
+          </>
+        ),
+        tags: [
+          { name: "Node.js", icon: "nodejs" },
+          { name: "Express.js", icon: "express" },
+          { name: "MongoDB", icon: "mongodb" },
+          { name: "PostgreSQL", icon: "postgresql" },
+          { name: "GraphQL", icon: "graphql" },
         ],
-      },  
+        images: [],
+      },
+      {
+        title: "Cloud & DevOps",
+        description: (
+          <>
+            Deploying and managing applications on modern cloud platforms and implementing
+            containerized environments.
+          </>
+        ),
+        tags: [
+          { name: "AWS", icon: "aws" },
+          { name: "Google Cloud", icon: "googlecloud" },
+          { name: "Docker", icon: "docker" },
+          { name: "Vercel", icon: "vercel" },
+          { name: "Netlify", icon: "netlify" },
+        ],
+        images: [],
+      },
+      {
+        title: "AI for Frontend",
+        description: (
+          <>
+            Integrating generative AI features and running models in the browser using modern
+            JavaScript libraries, SDKs, and APIs.
+          </>
+        ),
+        tags: [
+          { name: "OpenAI API", icon: "openai" },
+          { name: "TensorFlow.js", icon: "tensorflow" },
+          { name: "Vercel AI SDK", icon: "vercel" },
+          { name: "Hugging Face", icon: "huggingface" },
+          { name: "LangChain.js", icon: "langchain" },
+        ],
+        images: [],
+      },
     ],
   },
 };
