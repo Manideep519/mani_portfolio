@@ -5,7 +5,7 @@ const person: Person = {
   firstName: "Manideep",
   lastName: "Yadav Mamilla",
   name: `Mamilla Manideep`,
-  role: "Front-end Developer",
+  role: "Full Stack Developer",
   avatar: "/images/avatar.jpg",
   email: "manideep.m.yadav@gmail.com",
   location: "Asia/Kolkata",
@@ -99,7 +99,7 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        A React Frontend Developer from Hyderabad with over 5 years of experience building scalable
+        A Full Stack Developer from Hyderabad with over 5 years of experience building scalable
         web and mobile applications using the modern React ecosystem, React Native, and TypeScript.
         Passionate about creating intuitive, user-centric digital experiences through clean code and
         performance optimization. Specialized in developing responsive, accessible user interfaces
